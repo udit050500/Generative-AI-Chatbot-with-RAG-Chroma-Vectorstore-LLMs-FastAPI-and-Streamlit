@@ -96,7 +96,6 @@ generative-ai-chatbot/
 ├── fastapi_app.py         # FastAPI application code
 ├── streamlit_app.py       # Streamlit application code
 ├── requirements.txt       # Python dependencies
-├── .env                   # Environment variables
 └── README.md              # Project documentation
 ```
 
