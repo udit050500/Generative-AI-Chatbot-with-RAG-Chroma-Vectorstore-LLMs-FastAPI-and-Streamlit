@@ -40,3 +40,55 @@ Ensure you have the following installed:
 ```bash
 git clone https://github.com/your-username/generative-ai-chatbot.git
 cd generative-ai-chatbot
+
+**### Install Dependencies**
+pip install -r requirements.txt
+
+**### Environment Variables**
+
+Create a .env file in the project root directory and add the following environment variables:
+DEPLOYMENT_NAME=your_azure_deployment_name
+AZURE_API_KEY=your_azure_api_key
+AZURE_ENDPOINT=your_azure_endpoint
+AZURE_API_VERSION=your_azure_api_version
+
+**### Running the Application**
+
+**Start the FastAPI Server**
+uvicorn fastapi_app:app --reload --host 0.0.0.0 --port 8001
+
+**Start the Streamlit Application**
+Open a new terminal window and run:
+streamlit run streamlit_app.py
+
+**### Usage**
+
+Upload PDF Files
+
+	1.	Navigate to the Streamlit application.
+	2.	Upload your PDF files using the sidebar uploader.
+	3.	Click “Submit & Process” to process the PDF files.
+
+Ask a Question
+
+	1.	Enter your question in the text input box on the main page.
+	2.	Submit your question to receive a concise answer along with the source documents.
+
+**### Project Structure**
+generative-ai-chatbot/
+│
+├── fastapi_app.py         # FastAPI application code
+├── streamlit_app.py       # Streamlit application code
+├── requirements.txt       # Python dependencies
+└── README.md              # Project documentation
+
+**### License**
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+**### Acknowledgements**
+	•	Langchain
+	•	Chroma Vectorstore
+	•	Azure Cognitive Services
+	•	FastAPI
+	•	Streamlit
+
