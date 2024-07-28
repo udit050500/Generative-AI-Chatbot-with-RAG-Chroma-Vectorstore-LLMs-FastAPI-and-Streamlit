@@ -41,7 +41,7 @@ Ensure you have the following installed:
 git clone https://github.com/your-username/generative-ai-chatbot.git
 cd generative-ai-chatbot
 
-**### Install Dependencies**
+### Install Dependencies
 pip install -r requirements.txt
 
 **### Environment Variables**
