@@ -99,10 +99,6 @@ generative-ai-chatbot/
 └── README.md              # Project documentation
 ```
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit issues or pull requests to enhance the functionality of this project.
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
