@@ -1,4 +1,4 @@
-# Generative-AI-Chatbot-with-RAG-Chroma-Vectorstore-LLMs-FastAPI-and-Streamlit
+# Generative AI Chatbot with RAG, Chroma Vectorstore, LLMs, FastAPI, and Streamlit
 
 ## Overview
 
@@ -40,55 +40,78 @@ Ensure you have the following installed:
 ```bash
 git clone https://github.com/your-username/generative-ai-chatbot.git
 cd generative-ai-chatbot
+```
 
-**Install Dependencies**
+### Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-**### Environment Variables**
+### Environment Variables
 
-Create a .env file in the project root directory and add the following environment variables:
+Create a `.env` file in the project root directory and add the following environment variables:
+
+```
 DEPLOYMENT_NAME=your_azure_deployment_name
 AZURE_API_KEY=your_azure_api_key
 AZURE_ENDPOINT=your_azure_endpoint
 AZURE_API_VERSION=your_azure_api_version
+```
 
-**### Running the Application**
+### Running the Application
 
-**Start the FastAPI Server**
+#### Start the FastAPI Server
+
+```bash
 uvicorn fastapi_app:app --reload --host 0.0.0.0 --port 8001
+```
 
-**Start the Streamlit Application**
+#### Start the Streamlit Application
+
 Open a new terminal window and run:
+
+```bash
 streamlit run streamlit_app.py
+```
 
-**### Usage**
+## Usage
 
-Upload PDF Files
+### Upload PDF Files
 
-	1.	Navigate to the Streamlit application.
-	2.	Upload your PDF files using the sidebar uploader.
-	3.	Click “Submit & Process” to process the PDF files.
+1. Navigate to the Streamlit application.
+2. Upload your PDF files using the sidebar uploader.
+3. Click "Submit & Process" to process the PDF files.
 
-Ask a Question
+### Ask a Question
 
-	1.	Enter your question in the text input box on the main page.
-	2.	Submit your question to receive a concise answer along with the source documents.
+1. Enter your question in the text input box on the main page.
+2. Submit your question to receive a concise answer along with the source documents.
 
-**### Project Structure**
+## Project Structure
+
+```
 generative-ai-chatbot/
 │
 ├── fastapi_app.py         # FastAPI application code
 ├── streamlit_app.py       # Streamlit application code
 ├── requirements.txt       # Python dependencies
+├── .env                   # Environment variables
 └── README.md              # Project documentation
+```
 
-**### License**
-This project is licensed under the MIT License. See the LICENSE file for details.
+## Contributing
 
-**### Acknowledgements**
-	•	Langchain
-	•	Chroma Vectorstore
-	•	Azure Cognitive Services
-	•	FastAPI
-	•	Streamlit
+Contributions are welcome! Please feel free to submit issues or pull requests to enhance the functionality of this project.
 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- [Langchain](https://github.com/langchain/langchain)
+- [Chroma Vectorstore](https://www.trychroma.com/)
+- [Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/)
+- [FastAPI](https://fastapi.tiangolo.com/)
+- [Streamlit](https://streamlit.io/)
